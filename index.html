@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Christopher Greene - Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <style>
+        #name,
+        nav ul li a,
+        nav i {
+            color: black;
+        }
+
+        #surname {
+            color: white;
+            /* It may not be too clever, but hopefully it's at least memorable. */
+            background-color: #00aa00;
+            padding: 0em 4px;
+            font-weight: bold;
+        }
+
+        #surname:hover {
+            background-color: #00cc00;
+            transition: background-color 0.25s;
+        }
+
+        #totem {
+            color: #00aa00;
+        }
+    </style>
+</head>
+
+<body id="about" class="scrollspy">
+    <!-- Navbar Section -->
+    <div class="navbar-fixed">
+        <nav class="white green-text">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo flow-text" id="name">Christopher
+                        <span id="surname">Greene</span>
+                    </a>
+                    <a href="" data-target="mobile-nav" class="sidenav-trigger">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#resume">Resum&eacute;</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/cgreene11/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Resum&eacute;</a>
+        </li>
+        <li class="active">
+            <a href="#">Portfolio</a>
+        </li>
+        <li>
+            <a href="#">Contact</a>
+        </li>
+        <li>
+            <a href="#">LinkedIn</a>
+        </li>
+    </ul>
+
+    <!-- About Section -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/funkle.gif" />
+                <div class="caption left-align">
+                    <h2 class="">Web Developer for Hire</h2>
+                    <h5 class="light">*Love of cats included at no additional cost.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="section green darken-1 white-text center scrollspy">
+        <h3>About Me</h3>
+    </section>
+
+    <!-- Resume Section -->
+    <div class="container">
+        <a href="#" id="resume" class="black-text">
+            <h3>My
+                <span class="green-text">Resum&eacute;</span>
+            </h3>
+        </a>
+        <ul class="collapsible expandable">
+            <li>
+                <div class="collapsible-header hoverable">
+                    <i class="material-icons">work</i>Work Experience</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header hoverable">
+                    <i class="fas fa-graduation-cap"></i>Education</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header hoverable">
+                    <i class="fas fa-code"></i>Skills</div>
+                <div class="collapsible-body">
+                    <span>Lorem ipsum dolor sit amet.</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Script Section -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var sideNav = document.querySelector('.sidenav');
+            var sidenavInstance = M.Sidenav.init(sideNav, {});
+            var sliders = document.querySelectorAll('.slider');
+            var sliderInstances = M.Slider.init(sliders, {
+                indicators: false
+            });
+            var collapsibles = document.querySelectorAll('.collapsible');
+            var collabsibleInstances = M.Collapsible.init(collapsibles, { accordion: false });
+        });
+    </script>
+</body>
+
+</html>
