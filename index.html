@@ -11,131 +11,342 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
         #name,
         nav ul li a,
         nav i {
             color: black;
         }
 
+        #name {
+            padding: 0px 4px;
+        }
+
         #surname {
             color: white;
             /* It may not be too clever, but hopefully it's at least memorable. */
-            background-color: #00aa00;
-            padding: 0em 4px;
+            background-color: #43a047;
+            padding: 0px 4px;
             font-weight: bold;
         }
 
-        #surname:hover {
-            background-color: #00cc00;
-            transition: background-color 0.25s;
-        }
-
-        #totem {
-            color: #00aa00;
+        nav ul li a:hover {
+            background-color: #c8e6c9 !important;
         }
     </style>
 </head>
 
 <body id="about" class="scrollspy">
     <!-- Navbar Section -->
-    <div class="navbar-fixed">
-        <nav class="white green-text">
+    <header>
+        <div class="navbar-fixed">
+            <nav class="white green-text">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">
+                            <span id="name">Christopher</span><span id="surname">Greene</span>
+                        </a>
+                        <a href="" data-target="mobile-nav" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#resume">Resum&eacute;</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/cgreene11/">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-nav">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#resume">Resum&eacute;</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            <li>
+                <a href="#">LinkedIn</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <!-- About Section -->
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="img/funkle.gif" />
+                    <div class="caption left-align">
+                        <h2 class="">Web Developer for Hire</h2>
+                        <h5 class="light">*Love of cats included at no additional cost.</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <section id="about" class="section grey darken-4 white-text center scrollspy">
+            <h3>About
+                <span class="green-text text-lighten-1">Me</span>
+            </h3>
             <div class="container">
-                <div class="nav-wrapper">
-                    <a href="#" class="brand-logo flow-text" id="name">Christopher
-                        <span id="surname">Greene</span>
-                    </a>
-                    <a href="" data-target="mobile-nav" class="sidenav-trigger">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur illum veniam dolore quasi dolor. Laboriosam
+                    maiores error perspiciatis repellendus officia, temporibus magnam! Dolores, magnam inventore officia
+                    cupiditate temporibus perspiciatis illum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                    voluptatum.
+                </p>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section class="section" id="resume">
+            <div class="container">
+                <a href="#" id="resume" class="black-text">
+                    <h3>My
+                        <span class="green-text">Resum&eacute;</span>
+                    </h3>
+                </a>
+                <ul class="collapsible expandable">
+                    <li class="active">
+                        <div class="collapsible-header hoverable">
+                            <i class="material-icons">work</i>Work Experience</div>
+                        <div class="collapsible-body">
+
+                            <h5>Freelance Web Developer :: EDGE Info Systems</h5>
+                            <h6 class="">April 2016-Present // St. John's, NL</h6>
+                            <p>As an independent contractor, I work with clients to design and develop sites that will help
+                                them expand their market reach from the real world onto the Internet. My preferred technologies
+                                right now include PHP and Javascript, though a lot of our clients have been more WordPress
+                                oriented. I'm also working on picking up Angular and Laravel in my spare time, as both have
+                                really interesting features.
+                            </p>
+
+                            <div class="divider"></div>
+
+                            <h5>HR Assist Representative, Overpayments Team</h5>
+                            <h6>NGA Human Resources - St. John's, NL</h6>
+                            <h6 class="">October 2013-August 2014</h6>
+                            <p>The overpayments team's purpose was to make repayment arrangements (most often to correct payroll
+                                errors) with employees of one of NGA's clients, a huge international company I'm not at liberty
+                                to name due to a non-disclosure agreement. Basically we provided phone and email support
+                                to these employees through the repayment process, drafted notices and invoices, and also
+                                supported the client's HR Managers via phone and email, all with reference to our Oracle
+                                CRM system.</p>
+
+                            <div class="divider"></div>
+
+                            <h5>Program Assistant (Tribunal Services Division)</h5>
+                            <h6>Office of the Information &amp; Privacy Commissioner - Toronto, ON</h6>
+                            <h6 class=""> May 2012-September 2012</h6>
+                            <p>This was actually a work placement from my Paralegal program that turned into an amazing summer
+                                job while I filled in for someone on maternity leave. In general the job was twofold; on
+                                one hand we handled telephone &amp; email support, and drafted notices and memoranda for
+                                applicants and appellants making Freedom of Information requests, and on the other hand we
+                                provided clerical support to the mediators and adjudicators of the Tribunal Services Division.
+                                This usually entailed drafting and editing documents, as well as filing, faxing, and mailing.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header hoverable">
+                            <i class="fas fa-graduation-cap"></i>Education</div>
+                        <div class="collapsible-body">
+                            <h5>Diploma :: Web Development (In Progress)</h5>
+                            <h6>College of the North Atlantic - St. John's, NL</h6>
+                            <h6>September 2016-June 2018</h6>
+                            <p>To be honest, this is a pretty great program. I was expecting a heavier focus on a lot of the
+                                basic stuff I already knew; as I've been building sites since I was 12 or 13, my original
+                                idea in taking this program was more about getting a diploma to show that I know my stuff,
+                                I don't think I expected to learn quite as much as I did. Aside from providing a great foundation
+                                in OOP, the greatest strength of this program is bridging the gap between front-end and back-end
+                                development. A part of me feels like a third year with focus on more advanced frameworks
+                                and other tools (like AWS, Selenium, Angular etc..) would be great, but the program definitely
+                                gave me the skills to pick up new technologies easily on my own.</p>
+
+                            <div class="divider"></div>
+
+                            <h5>Bachelor of Arts :: English Language &amp; Literature</h5>
+                            <h6>Memorial University of Newfoundland - St. John's, NL</h6>
+                            <h6>September 2014-April 2016</h6>
+                            <p>After moving back to Newfoundland from Toronto, I decided to head back to MUN and finish the
+                                degree I'd started way back in 2002. I changed my major from Philosophy to English, and knocked
+                                it out the new degree requirements in 2 years. It was a good experience all in all, really
+                                polished up my communication skills, and helped develop my writing, on top of expanding my
+                                research skills.
+                                <br />
+                                <br /> Also I received a written commendation from the English Department for achieving an A in
+                                their Advanced Creative Writing: Poetry course, which I'm reasonably proud of. I've had poems
+                                published on two separate occasions.</p>
+
+                            <div class="divider"></div>
+
+                            <h5>Diploma :: Paralegal Studies</h5>
+                            <h6>Seneca College of Applied Arts and Technology</h6>
+                            <h6>September 2010-April 2012</h6>
+                            <p>Though I later decided that a career in law wasn't a good fit for me, this program was really
+                                valuable. Doing legal research and analyzing statutes, cases, and decisions requires a considerable
+                                amount of precision and a very critical eye. In a lot of ways programming and law are fairly
+                                comparable; writing a good contract requires the same broadly-scoped logic as constructing
+                                a program. In a court of law, as in a compiler, it's not the spirit of the document that
+                                matters: the specific words make a huge difference, and can make or break a good contract.
+                                I strongly believe the analytical skills I picked up in this program have had a dramatic
+                                impact on my programming skills.
+                                <br />
+                                <br />Graduated with Honors.</p>
+
+                            <div class="divider"></div>
+
+                            <h5>Study in Philosophy</h5>
+                            <h6>Memorial University of Newfoundland</h6>
+                            <h6>September 2002-April 2006</h6>
+                            <p>This was the degree program I started after high school, which I completed as the English degree
+                                above. I had some financial issues in 2006 that made it impossible to finish at the time,
+                                but in general my studies in Philosophy (which were actually split between MUN's Grenfell
+                                Campus in Corner Brook and the main campus in St. John's) really helped instill a sense of
+                                rigor and precision which has benefitted me as a programmer. Similarly to how I described
+                                my Paralegal program above, this program (with its intense dissection of linear logic) really
+                                helped develop the kind of thinking and mindset required for great programming.
+                                <br />
+                                <br /> As well, while I was studying I organized and conducted peer-tutorials on some of our more
+                                advanced Philosophy courses.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header hoverable">
+                            <i class="fas fa-code"></i>Skills</div>
+                        <div class="collapsible-body">
+                            <span>Lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="section grey darken-4">
+            <div class="container">
+                <h3 class="white-text">My
+                    <span class="green-text">Portfolio</span>
+                </h3>
+                <div class="row">
+                    <div class="col s12 m4">
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/cas.PNG">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">CAS
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                                <p>
+                                    <a href="http://students.cnawebdev.org/LG945/PR1100/">View Site</a>
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Cowboy Art Society
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis tempora ratione, obcaecati
+                                    praesentium ullam sint accusamus explicabo itaque aspernatur magnam!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <div class="card grey darken-3">
+                            <div class="card-content white-text">
+                                <span class="card-title">WIP</span>
+                                <p>I'm still working on getting this section filled out, but you should see more here over the
+                                    coming days!</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="mailto:c.greene1@gmail.com">Send me an Email</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h3>Contact <span class="green-text">Me</span></h3>
+                <h4 class="center"><a class="black-text" href="mailto:c.greene1@gmail.com"><i class="green-text fas fa-envelope"></i> Click here to send me an email.
+                </a></h4>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer Section -->
+    <footer class="page-footer green darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">About This Site</h5>
+                    <p class="white-text">I built this little site using
+                        <a class="white-text" href="https://materializecss.com/">Materialize</a> and
+                        <a class="white-text" href="https://fontawesome.com/">Font Awesome</a> which are pretty cool tools. My IDE was
+                        <a class="white-text" href="https://code.visualstudio.com/">VS Code</a>, and I published it from the terminal using
+                        <a class="white-text" href="https://git-scm.com/">Git</a> to this
+                        <a class="white-text" href="https://pages.github.com/">Github User Page</a>, which is an awesome service.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
                         <li>
-                            <a href="#about">About</a>
+                            <a class="white-text" href="https://materializecss.com/">Materialize</a>
                         </li>
                         <li>
-                            <a href="#resume">Resum&eacute;</a>
+                            <a class="white-text" href="https://fontawesome.com/">Font Awesome</a>
                         </li>
                         <li>
-                            <a href="#portfolio">Portfolio</a>
+                            <a class="white-text" href="https://code.visualstudio.com/">Visual Studio Code</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a class="white-text" href="https://git-scm.com/">Git</a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/cgreene11/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
+                            <a class="white-text" href="https://github.com/">Github</a>
+                        </li>
+                        <li>
+                            <a class="white-text" href="https://pages.github.com/">Github User Pages</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </div>
-    <ul class="sidenav" id="mobile-nav">
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li>
-            <a href="#">Resum&eacute;</a>
-        </li>
-        <li class="active">
-            <a href="#">Portfolio</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
-        </li>
-        <li>
-            <a href="#">LinkedIn</a>
-        </li>
-    </ul>
-
-    <!-- About Section -->
-    <div class="slider">
-        <ul class="slides">
-            <li>
-                <img src="img/funkle.gif" />
-                <div class="caption left-align">
-                    <h2 class="">Web Developer for Hire</h2>
-                    <h5 class="light">*Love of cats included at no additional cost.</h5>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <section class="section green darken-1 white-text center scrollspy">
-        <h3>About Me</h3>
-    </section>
-
-    <!-- Resume Section -->
-    <div class="container">
-        <a href="#" id="resume" class="black-text">
-            <h3>My
-                <span class="green-text">Resum&eacute;</span>
-            </h3>
-        </a>
-        <ul class="collapsible expandable">
-            <li>
-                <div class="collapsible-header hoverable">
-                    <i class="material-icons">work</i>Work Experience</div>
-                <div class="collapsible-body">
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header hoverable">
-                    <i class="fas fa-graduation-cap"></i>Education</div>
-                <div class="collapsible-body">
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-            </li>
-            <li>
-                <div class="collapsible-header hoverable">
-                    <i class="fas fa-code"></i>Skills</div>
-                <div class="collapsible-body">
-                    <span>Lorem ipsum dolor sit amet.</span>
-                </div>
-            </li>
-        </ul>
-    </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <span class="white-text">&copy; 2018 Christopher Greene</span>
+                <a class="white-text right" href="mailto:c.greene1@gmail.com">Get in Touch!</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Script Section -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
