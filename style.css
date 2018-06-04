@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+#name,
+nav ul li a,
+nav i {
+    color: black;
+}
+
+#name {
+    padding: 0px 4px;
+}
+
+#surname {
+    color: white;
+    /* It may not be too clever, but hopefully it's at least memorable. */
+    background-color: #43a047;
+    padding: 0px 4px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #c8e6c9 !important;
+}

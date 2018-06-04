@@ -10,38 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
-        main {
-            flex: 1 0 auto;
-        }
-
-        #name,
-        nav ul li a,
-        nav i {
-            color: black;
-        }
-
-        #name {
-            padding: 0px 4px;
-        }
-
-        #surname {
-            color: white;
-            /* It may not be too clever, but hopefully it's at least memorable. */
-            background-color: #43a047;
-            padding: 0px 4px;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            background-color: #c8e6c9 !important;
-        }
     </style>
 </head>
 
@@ -53,7 +23,8 @@
                 <div class="container">
                     <div class="nav-wrapper">
                         <a href="#" class="brand-logo">
-                            <span id="name">Christopher</span><span id="surname">Greene</span>
+                            <span id="name">Christopher</span>
+                            <span id="surname">Greene</span>
                         </a>
                         <a href="" data-target="mobile-nav" class="sidenav-trigger">
                             <i class="material-icons">menu</i>
@@ -264,7 +235,7 @@
                                     <i class="material-icons right">more_vert</i>
                                 </span>
                                 <p>
-                                    <a href="http://students.cnawebdev.org/LG945/PR1100/">View Site</a>
+                                    <a class="green-text" href="http://students.cnawebdev.org/LG945/PR1100/">View Site</a>
                                 </p>
                             </div>
                             <div class="card-reveal">
@@ -295,9 +266,14 @@
 
         <section class="section">
             <div class="container">
-                <h3>Contact <span class="green-text">Me</span></h3>
-                <h4 class="center"><a class="black-text" href="mailto:c.greene1@gmail.com"><i class="green-text fas fa-envelope"></i> Click here to send me an email.
-                </a></h4>
+                <h3>Contact
+                    <span class="green-text">Me</span>
+                </h3>
+                <h4 class="center">
+                    <a class="black-text" href="mailto:c.greene1@gmail.com">
+                        <i class="green-text fas fa-envelope"></i> Click here to send me an email.
+                    </a>
+                </h4>
             </div>
         </section>
 
@@ -342,7 +318,9 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                <span class="white-text">&copy; 2018 Christopher <span class="white green-text text-darken-1" style="padding:0px 2px; font-weight: bold;">Greene</span></span>
+                <span class="white-text">&copy; 2018 Christopher
+                    <span class="white green-text text-darken-1" style="padding:0px 2px; font-weight: bold;">Greene</span>
+                </span>
                 <a class="white-text right" href="mailto:c.greene1@gmail.com">Get in Touch!</a>
             </div>
         </div>
