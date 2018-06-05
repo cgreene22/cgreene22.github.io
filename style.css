@@ -29,3 +29,29 @@ nav i {
 nav ul li a:hover {
     background-color: #c8e6c9 !important;
 }
+
+/* Tabs */
+
+.tabs .tab a{
+    color:#000;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.tabs .tab a:hover {
+    background-color:#74d079;
+    color:#ffffff;
+}
+
+.tabs .tab a.active {
+    background-color:#43a047;
+    color:#ffffff;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color:#74d079;
+    color:#ffffff;
+}
+
+.tabs .indicator {
+    background-color:#2b742f;
+}

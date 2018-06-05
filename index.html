@@ -216,7 +216,131 @@
                         <div class="collapsible-header hoverable">
                             <i class="fas fa-code"></i>Skills</div>
                         <div class="collapsible-body">
-                            <span>Still working on this part, but believe me, I have some.</span>
+                            <div class="row">
+                                <div class="col s12">
+                                    <ul class="tabs" id="tabs">
+                                        <li class="tab col s3">
+                                            <a href="#frontEnd">Front-End</a>
+                                        </li>
+                                        <li class="tab col s3">
+                                            <a href="#backEnd">Back-End</a>
+                                        </li>
+                                        <li class="tab col s3">
+                                            <a href="#programming">Programming</a>
+                                        </li>
+                                        <li class="tab col s3">
+                                            <a href="#other">Other</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="frontEnd" class="col s12">
+                                    <h4>Front-End Skills</h4>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Development</h5>
+                                        <p>HTML 5 / CSS 3</p>
+                                        <p>JavaScript</p>
+                                        <p>WordPress</p>
+                                        <p>jQuery / jQuery UI</p>
+                                        <p>TypeScript</p>
+                                        <p>Sass / LESS</p>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Design</h5>
+                                        <p>Adobe Creative Cloud</p>
+                                        <p>Wireframing</p>
+                                        <p>Layout / Grid Development</p>
+                                        <p>Responsive Design</p>
+                                        <p>Flexbox (I seriously love Flexbox)</p>
+                                        <p>Material Design</p>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Diligence</h5>
+                                        <p>Version Control (Git)</p>
+                                        <p>Chrome Dev Tools</p>
+                                        <p>Designing for Accessibility</p>
+                                        <p>Unit &amp; Integration Tests</p>
+                                        <p>User Testing</p>
+                                        <p>Cross-Browser Testing</p>
+                                    </div>
+                                </div>
+                                <div id="backEnd" class="col s12">
+                                    <h4>Back-End Skills</h4>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Development</h5>
+                                        <p>PHP 7</p>
+                                        <p>SQL / MySQL</p>
+                                        <p>MongoDB</p>
+                                        <p>Apache / IIS</p>
+                                        <p>Node.js</p>
+                                        <p>JSON / AJAX</p>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Design</h5>
+                                        <p>SQL DB Design</p>
+                                        <p>NoSQL Design</p>
+                                        <p>Database Normalization</p>
+                                        <p>RESTful API Development</p>
+                                        <p>API Utilization</p>
+                                        <p>Form &amp; Data Processing</p>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Diligence</h5>
+                                        <p>Version Control (Git)</p>
+                                        <p>Data Security</p>
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div id="programming" class="col s12">
+                                    <h4>Programming Skills</h4>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Development</h5>
+                                        <p></p>
+                                        <p>SQL / MySQL</p>
+                                        <p>MongoDB</p>
+                                        <p>Apache / IIS</p>
+                                        <p>Node.js</p>
+                                        <p>JSON / AJAX</p>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Design</h5>
+                                        <p>SQL DB Design</p>
+                                        <p>NoSQL Design</p>
+                                        <p>Database Normalization</p>
+                                        <p>RESTful API Development</p>
+                                        <p>API Utilization</p>
+                                        <p>Form &amp; Data Processing</p>
+                                    </div>
+                                    <div class="col s12 m4">
+                                        <h5 class="green-text text-darken-1">Diligence</h5>
+                                        <p>Version Control (Git)</p>
+                                        <p>Data Security</p>
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div id="other" class="col s12">
+                                    <div class="col s4">
+                                        <p>JavaScript</p>
+                                        <p>CSS</p>
+                                        <p>HTML</p>
+                                    </div>
+                                    <div class="col s4">
+                                        <p>JavaScript</p>
+                                        <p>CSS</p>
+                                        <p>HTML</p>
+                                    </div>
+                                    <div class="col s4">
+                                        <p>JavaScript</p>
+                                        <p>CSS</p>
+                                        <p>HTML</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -371,6 +495,7 @@
             });
             var collapsibles = document.querySelectorAll('.collapsible');
             var collabsibleInstances = M.Collapsible.init(collapsibles, { accordion: false });
+            var instance = M.Tabs.init(tabs, {});
         });
     </script>
 </body>
